@@ -1,14 +1,16 @@
 Add your answers to the questions below.
 
 1. What is the runtime complexity of your `depth_first_for_each` method?
+   My solution will take O(n) time as it uses a single while loop to manage BST traversal.
 
 2. What is the space complexity of your `depth_first_for_each` function?
+   My solution adds at most 2 nodes to the stack at each step and pops off 1 node at each step. This leads me to believe that the maximum space my solution could take is 0.5n. Dropping the constant, we should expect this solution to take up O(n) space.
 
 3. What is the runtime complexity of your `breadth_first_for_each` method? <br/>
    My solution will take O(n) time as it uses a single while loop to manage BST traversal.
 
 4. What is the space complexity of your `breadth_first_for_each` method? <br/>
-   My solution adds at most 2 nodes to the queue at each step and pops off 1 node at each step. This leads me to believe that the maximum space my solution could take is 0.5n. Dropping the constant, we should expect this solution to take O(n) space.
+   My solution adds at most 2 nodes to the queue at each step and pops off 1 node at each step. This leads me to believe that the maximum space my solution could take is 0.5n. Dropping the constant, we should expect this solution to take up O(n) space.
 
 5) What is the runtime complexity of the provided code in `names.py`?<br/>
    In the provided algorithm, there are two lists containing 10k names each. We are nesting one for loop inside of the other, iterating over both lists. Thus, the runtime complexity of the provided algorithm is O(n^2) where n = 10000. <br/><br/>

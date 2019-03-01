@@ -6,6 +6,15 @@ class BinarySearchTree:
 
     def depth_first_for_each(self, cb):
         stack = [self]
+        while stack:
+            node = stack.pop()
+            if node.value:
+                cb(node.value)
+                if node.right:
+                    stack.append(node.right)
+                if node.left:
+                    stack.append(node.left)
+        return
 
     def breadth_first_for_each(self, cb):
         queue = [self]
